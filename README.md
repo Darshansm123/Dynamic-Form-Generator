@@ -5,35 +5,35 @@ This project allows users to dynamically generate forms based on JSON schemas. I
 ## Setup Instructions
 To get started with this project, follow the steps below:
 
-# 1. Clone the repository:
+### 1. Clone the repository:
 
 git clone https://github.com/Darshansm123/Dynamic-Form-Generator.git
 
 cd Dynamic-Form-Generator
 
 
-# 2. Install dependencies: Install the required dependencies using npm:
+### 2. Install dependencies: Install the required dependencies using npm:
 
 npm install
 
-# 3. Run the application: To start the app in development mode:
+### 3. Run the application: To start the app in development mode:
 
 npm start
 
 This will open the application at http://localhost:3000.
 
-# 4. Production build: To build the app for production:
+### 4. Production build: To build the app for production:
 
 npm run build
 
-# 5. Ejecting: If you want to customize the build configuration, you can eject (not recommended unless necessary):
+### 5. Ejecting: If you want to customize the build configuration, you can eject (not recommended unless necessary):
 
 npm run eject
 
 
-**Example JSON Schemas**
+## Example JSON Schemas
 
- # 1. Basic Text Field
+ ### 1. Basic Text Field
 
  {
   "formTitle": "Sample Form",
@@ -58,7 +58,7 @@ npm run eject
   ]
 }
 
-# 2. Radio Button Field
+### 2. Radio Button Field
 
 {
   "formTitle": "Gender Form",
@@ -76,7 +76,7 @@ npm run eject
   ]
 }
 
-# 3. Dropdown (Select) Field
+### 3. Dropdown (Select) Field
 {
   "formTitle": "Gender Form",
   "fields": [
@@ -93,7 +93,7 @@ npm run eject
   ]
 }
 
-# 4. Sample JSON Schema
+### 4. Sample JSON Schema
 {
   "formTitle": "Project Requirements Survey",
   "formDescription": "Please fill out this survey about your project needs",
@@ -164,24 +164,24 @@ npm run eject
 }
 
 
-**Local Development Guide**
+## Local Development Guide
 
-1. Starting the development server: After cloning the repository and installing dependencies, run the following command to start the development server:
+### 1. Starting the development server: After cloning the repository and installing dependencies, run the following command to start the development server:
 
 npm start
 
 The app will be available at http://localhost:3000.
 
-2. Testing: Run unit tests using Jest and end-to-end tests using Playwright:
+### 2. Testing: Run unit tests using Jest and end-to-end tests using Playwright:
 
 npm test        # To run unit tests
 npm run e2e     # To run Playwright end-to-end tests
 
-3. Building the app: To create a production build of the app, run:
+### 3. Building the app: To create a production build of the app, run:
 
 npm run build
 
-4. Deploying to Vercel/Netlify: Once you have the production build, you can deploy it to platforms like Vercel or Netlify.
+### 4. Deploying to Vercel/Netlify: Once you have the production build, you can deploy it to platforms like Vercel or Netlify.
 
 For Vercel, simply connect your GitHub repository to your Vercel account and deploy the project.
 For Netlify, drag the build folder to the Netlify dashboard to deploy.
