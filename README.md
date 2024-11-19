@@ -13,6 +13,7 @@ cd your-repo-name
 
 #### For Example
 git clone https://github.com/Darshansm123/Dynamic-Form-Generator.git
+
 cd Dynamic-Form-Generator
 
 ### 2. Install dependencies: Install the required dependencies using npm:
