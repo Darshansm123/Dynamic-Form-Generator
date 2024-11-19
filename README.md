@@ -7,10 +7,13 @@ To get started with this project, follow the steps below:
 
 ### 1. Clone the repository:
 
+git clone https://github.com/your-username/your-repo-name.git
+
+cd your-repo-name
+
+#### For Example
 git clone https://github.com/Darshansm123/Dynamic-Form-Generator.git
-
 cd Dynamic-Form-Generator
-
 
 ### 2. Install dependencies: Install the required dependencies using npm:
 
