@@ -1,8 +1,8 @@
-**Dynamic Form Generator**
+## Dynamic Form Generator
 
 This project allows users to dynamically generate forms based on JSON schemas. It is built using React, TypeScript, Tailwind CSS, React Hook Form, Playwright for E2E testing, and Jest for unit testing. The project supports real-time updates, form validation, and user-friendly form generation.
 
-**Setup Instructions**
+# Setup Instructions
 To get started with this project, follow the steps below:
 
 # 1. Clone the repository:
