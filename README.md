@@ -198,3 +198,20 @@ npm run build
 
 For Vercel, simply connect your GitHub repository to your Vercel account and deploy the project.
 For Netlify, drag the build folder to the Netlify dashboard to deploy.
+
+## Screen Shots
+
+#### 1. First page of Dynamic Form Generator 
+![image alt](https://github.com/Darshansm123/Dynamic-Form-Generator/blob/master/Open%20app.png?raw=true)
+
+#### 2. Data Enter to The Generated Form
+![image alt](https://github.com/Darshansm123/Dynamic-Form-Generator/blob/master/Data.png?raw=true)
+
+#### 3. Submiting the Form
+![image alt](https://github.com/Darshansm123/Dynamic-Form-Generator/blob/master/Submit.png?raw=true)
+
+#### 4. Download the Submited form
+![image alt](https://github.com/Darshansm123/Dynamic-Form-Generator/blob/master/Download.png?raw=true)
+
+#### 5. Dark/Light Mode Changing
+![image alt](https://github.com/Darshansm123/Dynamic-Form-Generator/blob/master/Dork%20mode.png?raw=true)
