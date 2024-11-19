@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+  /* src/index.css */
+/* Tailwind default reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: #1a202c;
+  color: white;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
