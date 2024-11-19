@@ -1,46 +1,187 @@
-# Getting Started with Create React App
+**Dynamic Form Generator**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project allows users to dynamically generate forms based on JSON schemas. It is built using React, TypeScript, Tailwind CSS, React Hook Form, Playwright for E2E testing, and Jest for unit testing. The project supports real-time updates, form validation, and user-friendly form generation.
 
-## Available Scripts
+**Setup Instructions**
+To get started with this project, follow the steps below:
 
-In the project directory, you can run:
+# 1. Clone the repository:
 
-### `npm start`
+git clone https://github.com/Darshansm123/Dynamic-Form-Generator.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+cd Dynamic-Form-Generator
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+# 2. Install dependencies: Install the required dependencies using npm:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
 
-### `npm run build`
+# 3. Run the application: To start the app in development mode:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will open the application at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 4. Production build: To build the app for production:
 
-### `npm run eject`
+npm run build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 5. Ejecting: If you want to customize the build configuration, you can eject (not recommended unless necessary):
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run eject
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Example JSON Schemas**
 
-## Learn More
+ # 1. Basic Text Field
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ {
+  "formTitle": "Sample Form",
+  "formDescription": "This is a sample form.",
+  "fields": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Full Name",
+      "required": true
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true,
+      "validation": {
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+        "message": "Invalid email"
+      }
+    }
+  ]
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 2. Radio Button Field
+
+{
+  "formTitle": "Gender Form",
+  "fields": [
+    {
+      "id": "gender",
+      "type": "radio",
+      "label": "Gender",
+      "options": [
+        { "label": "Male", "value": "male" },
+        { "label": "Female", "value": "female" },
+        { "label": "Other", "value": "other" }
+      ]
+    }
+  ]
+}
+
+# 3. Dropdown (Select) Field
+{
+  "formTitle": "Gender Form",
+  "fields": [
+    {
+      "id": "gender",
+      "type": "radio",
+      "label": "Gender",
+      "options": [
+        { "label": "Male", "value": "male" },
+        { "label": "Female", "value": "female" },
+        { "label": "Other", "value": "other" }
+      ]
+    }
+  ]
+}
+
+# 4. Sample JSON Schema
+{
+  "formTitle": "Project Requirements Survey",
+  "formDescription": "Please fill out this survey about your project needs",
+  "fields": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Full Name",
+      "required": true,
+      "placeholder": "Enter your full name"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true,
+      "placeholder": "you@example.com",
+      "validation": {
+        "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+        "message": "Please enter a valid email address"
+      }
+    },
+    {
+      "id": "companySize",
+      "type": "select",
+      "label": "Company Size",
+      "required": true,
+      "options": [
+        { "value": "1-50", "label": "1-50 employees" },
+        { "value": "51-200", "label": "51-200 employees" },
+        { "value": "201-1000", "label": "201-1000 employees" },
+        { "value": "1000+", "label": "1000+ employees" }
+      ]
+    },
+    {
+      "id": "industry",
+      "type": "radio",
+      "label": "Industry",
+      "required": true,
+      "options": [
+        { "value": "tech", "label": "Technology" },
+        { "value": "healthcare", "label": "Healthcare" },
+        { "value": "finance", "label": "Finance" },
+        { "value": "retail", "label": "Retail" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "id": "timeline",
+      "type": "select",
+      "label": "Project Timeline",
+      "required": true,
+      "options": [
+        { "value": "immediate", "label": "Immediate (within 1 month)" },
+        { "value": "short", "label": "Short-term (1-3 months)" },
+        { "value": "medium", "label": "Medium-term (3-6 months)" },
+        { "value": "long", "label": "Long-term (6+ months)" }
+      ]
+    },
+    {
+      "id": "comments",
+      "type": "textarea",
+      "label": "Additional Comments",
+      "required": false,
+      "placeholder": "Any other details you'd like to share..."
+    }
+  ]
+}
+
+
+**Local Development Guide**
+
+1. Starting the development server: After cloning the repository and installing dependencies, run the following command to start the development server:
+
+npm start
+
+The app will be available at http://localhost:3000.
+
+2. Testing: Run unit tests using Jest and end-to-end tests using Playwright:
+
+npm test        # To run unit tests
+npm run e2e     # To run Playwright end-to-end tests
+
+3. Building the app: To create a production build of the app, run:
+
+npm run build
+
+4. Deploying to Vercel/Netlify: Once you have the production build, you can deploy it to platforms like Vercel or Netlify.
+
+For Vercel, simply connect your GitHub repository to your Vercel account and deploy the project.
+For Netlify, drag the build folder to the Netlify dashboard to deploy.
